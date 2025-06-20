@@ -12,16 +12,16 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", "22253379"))
-API_HASH = getenv("API_HASH", "3660b1aa39b0573caefc691d60a3dd53")
+API_ID = int(getenv("API_ID", "26544005"))
+API_HASH = getenv("API_HASH", "66f6221e5ce9109827b50eaf3d105025")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("7571662710:AAGC7kOJ1qC1VNn_5T159O367yrY4L9Wq9M")
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://wtfbruh:KontolXD#123@fsub.brzgete.mongodb.net/?retryWrites=true&w=majority&appName=fsub", None)
 
 
 CLEANMODE_DELETE_MINS = int(
@@ -35,7 +35,7 @@ DURATION_LIMIT_MIN = int(
 )  # Remember to give value in Minutes
 
 # forced entry
-MUST_JOIN = getenv("MUST_JOIN")
+MUST_JOIN = getenv("@lokontolya")
 
 
 EXTRA_PLUGINS = getenv(
@@ -65,12 +65,12 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002869486987"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002554488354"))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "8107432436").split())
+    map(int, getenv("OWNER_ID", "5870285414").split())
 )  # Input type must be interger
 
 
@@ -95,10 +95,10 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/kaizenxpensicodex"
+    "SUPPORT_CHANNEL", "https://t.me/lokontolya"
 )  # Example:- https://t.me/TheTeamVivek
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/kaijensupport"
+    "SUPPORT_GROUP", "https://t.me/ultraroidsupport"
 )  # Example:- https://t.me/TheTeamVk
 
 
@@ -122,7 +122,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/Usern4meDoesExist404")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/jonathandeveloper")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
