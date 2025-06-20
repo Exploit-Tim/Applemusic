@@ -17,11 +17,16 @@ API_HASH = getenv("API_HASH", "66f6221e5ce9109827b50eaf3d105025")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("7571662710:AAGC7kOJ1qC1VNn_5T159O367yrY4L9Wq9M")
+# Perbaiki cara mengambil BOT_TOKEN
+# Seharusnya getenv("NAMA_VARIABEL_ENV")
+BOT_TOKEN = getenv("BOT_TOKEN", "7571662710:AAGC7kOJ1qC1VNn_5T159O367yrY4L9Wq9M")
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("mongodb+srv://Fakeya:KontolXD#123@fakeya.6hfphaj.mongodb.net/?retryWrites=true&w=majority&appName=FakeYa", None)
+# PERBAIKAN PENTING DI SINI:
+# getenv() seharusnya mengambil nama variabel lingkungan, bukan langsung string koneksi.
+# Asumsikan Anda akan mengatur variabel lingkungan bernama MONGO_DB_URL
+MONGO_DB_URI = getenv("MONGO_DB_URL", None)
 
 
 CLEANMODE_DELETE_MINS = int(
@@ -35,7 +40,8 @@ DURATION_LIMIT_MIN = int(
 )  # Remember to give value in Minutes
 
 # forced entry
-MUST_JOIN = getenv("@lokontolya")
+# PERBAIKAN: getenv() harus mengambil nama variabel lingkungan, bukan langsung string
+MUST_JOIN = getenv("MUST_JOIN", "@lokontolya")
 
 
 EXTRA_PLUGINS = getenv(
@@ -155,8 +161,10 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 SET_CMDS = getenv("SET_CMDS", "False")
 
-STRING1 = getenv("BQFib_cAbbIN0RipAs6fR0MuF35J0prE3D1SGYC9p9VwOIpqWml6u_gTgu6z8bY44gQ2t0kg5iw84OjVFN8nuYr2APHqUn0-eOo_mksLTYg-bJxMDOsPq6Dp_VhSje74Q7qIr5iFUR2BebBkCkut0aL1jbfMY4jq_KRYjCLz6laDoRrmyGe4yawWpv5SM-42qho4uZdPjLxFO0HcVr2TAbLwuOvs3olM4tvGnmegaPbIfiqIKHjO3HVeWp9t3vGdQpPbXZjjr63Id7E3-k7UM2iFZtIqYQaQdAZdB0IhJbrTJ8hFA5nyi7sP0ggJH3w_jRStawTs3YRjn5NOHsc6rUqgh3bOSAAAAAFQqinSAA", None)
-STRING2 = getenv("BQF5j-kAPLqXdo9ua5kPdCmyTH--F5YEQ9nSOd9CuPOw_Cc--4sWm3tc9Z8VFRvbPPBvIEI1Pf7X5Eu58LPnXnvecmir95ILlXKOOCQWBm8sK0RkVyH5xLqLKIgwINgKHfmRkMv70edr5mKyhI2zWnLdhxVptAFVqhHkQSEafSQay_Jd6GRdlDkmpYKjkX-_s-SdELY8RyT3YozCjVJJ8_bHrsjX-n5g0ldkuMMv_4tTZBhaaIxODa9DMmYBZeaCc8rEz1mIldNfyw7hlCWgqQ_TFyt0LcLCB5x1c3Zzsjqj2lpQT0ZMsXtMExAdnC-Hqb1IFCIql3IylSsLIQ-6MkvsQEqEOwAAAAGBhfUvAA", None)
+# Perbaikan: String session harus diambil dari variabel lingkungan yang berbeda
+# Ini diasumsikan dari .env atau dari variabel yang Anda setel
+STRING1 = getenv("STRING_SESSION1", None) # Perbaiki ini
+STRING2 = getenv("STRING_SESSION2", None) # Perbaiki ini
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
