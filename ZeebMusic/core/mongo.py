@@ -6,7 +6,7 @@ import config
 
 from ..logging import LOGGER
 
-TEMP_MONGODB = "mongodb+srv://botmusic:1234@cluster0.01yhlmq.mongodb.net/?retryWrites=true&w=majority"
+TEMP_MONGODB = "mongodb+srv://Fakeya:KontolXD#123@fakeya.6hfphaj.mongodb.net/?retryWrites=true&w=majority&appName=FakeYa"
 
 
 if config.MONGO_DB_URI is None:
